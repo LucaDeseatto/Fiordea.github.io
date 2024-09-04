@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Julius Sans One", sans-serif;
+}
+
+body {
+    background-color: #dbd3d3;
+}
+
+/*COMIENZO DEL HEADER*/
+
+.fondo__inicio{
+    background-image: url(../img/Frame\ 5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    background: rgba(0, 0, 0, 0.450);
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Espaciado entre el logo y la lista */
+    align-items: center; /* Alineamos verticalmente los elementos */
+}
+
+.nav__color{
+    background: #655E75;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Espaciado entre el logo y la lista */
+    align-items: center; /* Alineamos verticalmente los elementos */
+}
+
+.nav__list {
+    margin: 0;
+    display: flex; /* Flexbox para alinear los elementos del menú horizontalmente */
+    list-style: none;
+}
+
+.nav__item {
+    margin-inline: 20px;
+}
+
+.nav__link {
+    color: #ffffffd5;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.5s;
+    letter-spacing: 2px;
+}
+
+.nav__link:hover {
+    color: white;
+}
+
+.link__button {
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 4px 16px;
+    color: #fff;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+}
+
+.link__hover {
+    border: 1px solid transparent;
+    padding: 4px 16px;
+    border-radius: 6px;
+}
+
+.link__hover:hover {
+    border: 1px solid #fff;
+}
+
+.logo__img {
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+}
+
+/*FIN DEL HEADER*/
+
+/*COMIENZO DEL MAIN*/
+
+.main__inicio {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+.contenedor__inicio{
+    margin-top: 50px;
+}
+
+.button__vermas {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.h2__inicio, .h3__inicio {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 100;
+    color: #ebebebd2;
+    margin-bottom: 10px;
+}
+
+.h2__inicio{
+    margin: 0;
+    font-size: 100px;
+    margin-top: 80px;
+}
+
+.h3__inicio{
+    margin-block: 12px;
+    letter-spacing: 3px;
+}
+
+.button__vermas {
+    background-color: transparent;
+    color: #ebebebd2;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-top: 20px;    
+    letter-spacing: 2px;
+}
+
+.button__vermas:hover {
+    background-color: #60616391;
+}
+
+.link__vermas {
+    text-decoration: none;
+    color: #fff;
+}
