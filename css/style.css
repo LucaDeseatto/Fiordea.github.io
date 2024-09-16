@@ -8,155 +8,152 @@
     font-family: "Julius Sans One", sans-serif;
 }
 
-body {
-    background-color: #dbd3d3;
+html{
+    scroll-behavior: smooth;
 }
 
-/*COMIENZO DEL HEADER*/
+/* HEADER */
 
-.fondo__inicio{
-    background-image: url(../img/Frame\ 5.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+.header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
 }
 
-.header {
-    position: sticky;
-    top: 0;
+.logo{
+    width: 4rem;
+    height: 4rem;
+    transition: transform 0.3s ease;
 }
 
-.nav {
-    background: rgba(0, 0, 0, 0.450);
-    padding: 12px;
-    position: sticky;
-    top: 0;
-    display: flex; /* Usamos flexbox para alinear los elementos */
-    justify-content: space-between; /* Espaciado entre el logo y la lista */
-    align-items: center; /* Alineamos verticalmente los elementos */
+.logo:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
 }
 
-.nav__color{
-    background: #655E75;
-    padding: 12px;
-    position: sticky;
-    top: 0;
-    display: flex; /* Usamos flexbox para alinear los elementos */
-    justify-content: space-between; /* Espaciado entre el logo y la lista */
-    align-items: center; /* Alineamos verticalmente los elementos */
+.nav-bar{
+    background: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
 }
 
-.nav__list {
-    margin: 0;
-    display: flex; /* Flexbox para alinear los elementos del menú horizontalmente */
+.nav-list{
+    display: flex;
     list-style: none;
+    gap: 4rem;
 }
 
-.nav__item {
-    margin-inline: 20px;
-}
-
-.nav__link {
-    color: #ffffffd5;
+.nav__link{
+    color: #ffffffb6;
     text-decoration: none;
-    font-size: 16px;
     transition-duration: 0.5s;
     letter-spacing: 2px;
-}
-
-.nav__link:hover {
-    color: white;
-}
-
-.link__button {
-    border: 1px solid #fff;
-    background-color: transparent;
-    padding: 4px 16px;
-    color: #fff;
-    border-radius: 6px;
-    transition-duration: 0.5s;
 }
 
 .link__hover {
     border: 1px solid transparent;
-    padding: 4px 16px;
-    border-radius: 6px;
+    padding: 0.4rem;
+    border-radius: 10px;
 }
 
 .link__hover:hover {
     border: 1px solid #fff;
+    color: #fff;
 }
 
-.logo__img {
-    width: 50px;
-    height: 50px;
-    margin-left: 40px;
-}
+/* MAIN---------------------- MAIN*/
 
-/*FIN DEL HEADER*/
-
-/*COMIENZO DEL MAIN*/
-
-.main__inicio {
+.hero__main{
+    height: 100vh;
+    background-image: url(../img/Frame\ 5.png);
+    background-position: center;
+    background-size: cover;
+    color: #ffffffb6;
     display: flex;
-    flex-direction: column; /* Coloca los elementos en una columna */
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    text-align: center; /* Centra el texto */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
-.contenedor__inicio{
+.h2__nosotros,
+.h3__nosotros,
+.link__nosotros{
+    margin: 10px;
+}
+
+.h2__nosotros{
+    font-size: 5.5rem;
+    font-weight: 400;
+}
+
+.h3__nosotros{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.link__nosotros{
+    color: #ffffffb6;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition-duration: .5s;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.link__nosotros:hover{
+    background-color: #535151b6;
+    color: #fff;
+}
+
+/* MAIN---------------------- NOSOTROS*/
+
+.hero__nosotros{
+    height: 100vh;
+    background-color: #e0e0e0;
+    scroll-margin-top: 100px;
+}
+
+.contenedor__sobremi{
+    padding: 30px;
+    text-align: center;
+}
+
+.titulo__sobremi{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.texto__sobremi, 
+.texto__sobremi2{
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 2;
+    font-weight: 600;
+    color: #1d1d1d;
+}
+
+.texto__sobremi2{
     margin-top: 50px;
 }
 
-.button__vermas {
-    background-color: transparent;
-    color: #fff;
-    padding: 10px 20px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
+/* MAIN---------------------- PRODUCTOS*/
+
+.hero__productos{
+    height: 100vh;
+    background-color: #e0e0e0;
+    scroll-margin-top: 100px;
 }
 
-.h2__inicio, .h3__inicio {
-    font-family: "Julius Sans One", sans-serif;
-    font-weight: 100;
-    color: #ebebebd2;
-    margin-bottom: 10px;
-}
-
-.h2__inicio{
-    margin: 0;
-    font-size: 100px;
-    margin-top: 80px;
-}
-
-.h3__inicio{
-    margin-block: 12px;
-    letter-spacing: 3px;
-}
-
-.button__vermas {
-    background-color: transparent;
-    color: #ebebebd2;
-    padding: 10px 20px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.5s;
-    margin-top: 20px;    
-    letter-spacing: 2px;
-}
-
-.button__vermas:hover {
-    background-color: #60616391;
-}
-
-.link__vermas {
-    text-decoration: none;
-    color: #fff;
+.titulo__productos{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 1.5rem;
 }

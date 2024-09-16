@@ -3,35 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./img/logofiordea.png" type="image/x-icon">
     <title>Fiordea</title>
+    <link rel="icon" href="./img/logofiordea.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="fondo__inicio">
-    <header class="header">
-        <nav class="nav">
-            <a href="index.html" class="logo__link">
-                <img class="logo__img" src="./img/logofiordea.png" alt="logo">
-            </a>
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a class="nav__link link__hover" href="./pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link link__hover" href="./pages/galeria.html">Galeria</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link link__hover" href="./pages/tienda.html">Tienda</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main__inicio">
-        <div class="contenedor__inicio">
-            <h2 class="h2__inicio">FIORDEA</h2>
-            <h3 class="h3__inicio">ARTE Y COSTURA</h3>
-            <button class="button__vermas"><a class="link__vermas" href="./pages/nosotros.html">CONOCENOS</a></button>
-        </div>
-    </main>
+<body>
+        <header class="header">
+            <nav class="nav-bar">
+                <a href="#">
+                    <img class="logo" src="./img/logofiordea.png" alt="Logo-Inicio">
+                </a>
+                <ul class="nav-list">
+                    <li class="nav__item">
+                        <a class="nav__link link__hover" href="#hero-nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link__hover" href="#hero-productos">Productos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="hero__main">
+                <h2 class="h2__nosotros">Fiordea</h2>
+                <h3 class="h3__nosotros">ARTE Y COSTURA</h3>
+                <a class="link__nosotros" href="#hero-nosotros">CONOCENOS</a>
+            </div>
+        </section>
+
+        <section class="hero__nosotros" id="hero-nosotros">
+            <div class="contenedor__sobremi">
+                <h2 class="titulo__sobremi">Sobre Mi</h2>
+                <p class="texto__sobremi">Fiordea es un emprendimiento de moda fundado por Bernarda, enfocado en la creación de prendas artesanales y sostenibles. Cada pieza es diseñada con materiales de alta calidad y confeccionada de manera ética, apoyando talleres locales y promoviendo la producción responsable. Fiordea busca combinar estilo y confort, ofreciendo desde básicos atemporales hasta diseños únicos, siempre con un enfoque en la durabilidad y el respeto al medio ambiente. A través de su tienda online, Fiordea se dirige a personas que valoran la autenticidad y la moda consciente, fomentando un consumo más reflexivo y sostenible.</p>
+                <p class="texto__sobremi2">Fiordea es un emprendimiento de moda fundado por Bernarda, enfocado en la creación de prendas artesanales y sostenibles. Cada pieza es diseñada con materiales de alta calidad y confeccionada de manera ética, apoyando talleres locales y promoviendo la producción responsable. Fiordea busca combinar estilo y confort, ofreciendo desde básicos atemporales hasta diseños únicos, siempre con un enfoque en la durabilidad y el respeto al medio ambiente. A través de su tienda online, Fiordea se dirige a personas que valoran la autenticidad y la moda consciente, fomentando un consumo más reflexivo y sostenible.</p>
+            </div>
+        </section>
+        <section class="hero__productos" id="hero-productos">
+            <h3 class="titulo__productos">Productos</h3>
+        </section>
 </body>
 </html>

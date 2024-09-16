@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Julius Sans One", sans-serif;
+}
+
+body {
+    background-color: #dbd3d3;
+}
+
+.nav__color{
+    background-color: rgb(97, 115, 121);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.logo__img{
+    width: 60px;
+    height: 60px;
+    margin-left: 40px;
+}
+
+.nav__link{
+    color: white;
+    margin-inline: 30px;
+    text-decoration: none;
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+}
